@@ -17,5 +17,8 @@ if (pomme.endsWith("!")) {
 document.getElementById("pomme").innerHTML = pomme.slice(18, 23);
 
 for (let i = 0; i < pomme.length; i++) {
-    document.getElementById("one-line").innerHTML = pomme.split("");
+    let lettre = document.createElement("p");
+    lettre.innerHTML = "-> " + pomme[i];
+    document.getElementById("one-line").appendChild(lettre);
+
 }
