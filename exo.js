@@ -16,9 +16,6 @@ if (pomme.endsWith("!")) {
 
 document.getElementById("pomme").innerHTML = pomme.slice(18, 23);
 
-
-let oneLine = document.getElementById("one-line");
-
 for (let i = 0; i < pomme.length; i++) {
-    oneLine.innerHTML = pomme.split("");
+    document.getElementById("one-line").innerHTML = pomme.split("");
 }
